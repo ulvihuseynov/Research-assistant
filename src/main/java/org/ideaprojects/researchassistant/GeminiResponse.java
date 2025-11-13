@@ -13,19 +13,19 @@ public class GeminiResponse {
 
     @Data
     @JsonIgnoreProperties(ignoreUnknown = true)
-    private static class Candidate{
+    public static class Candidate{
         private Content content;
     }
 
     @Data
     @JsonIgnoreProperties(ignoreUnknown = true)
-    private static class Content{
+    public static class Content{
         private List<Part> parts;
     }
 
     @Data
     @JsonIgnoreProperties(ignoreUnknown = true)
-    private static class Part{
+    public static class Part{
         private String text;
     }
 }
