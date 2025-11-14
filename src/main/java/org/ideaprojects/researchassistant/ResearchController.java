@@ -21,6 +21,6 @@ public class ResearchController {
 
         String result=researchService.processContent(request);
 
-        return new ResponseEntity<>(result, HttpStatus.FOUND);
+        return new ResponseEntity<>(result, HttpStatus.OK);
     }
 }
